@@ -1,6 +1,11 @@
 Aetizaz Sameer
+
 Github: aetizazsameer/wordsearch/README.md
 
+# Update log
+v1.0: Initial release
+
+# wordsearch
 This program was adapted from another program I made in school. The original program could be used to determine whether
 particular words are present in a word search puzzle. However, it was impossible to specify words and enter a custom
 word search. Additionally, it did not give the location of words on the word search, and the word search could only be
