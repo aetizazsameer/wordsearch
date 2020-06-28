@@ -4,6 +4,7 @@ Github: aetizazsameer/wordsearch/README.md
 
 # Update log
 v1.0: Initial release
+v1.1: Some variable names updated and response formats specified updated for clarity; credits implemented; automatic restart on incorrectly-formatted response implemented; restart and exit notices implemented; immediate closing of console window and error message display fixed;
 
 # wordsearch
 This program was adapted from another program I made in school. The original program could be used to determine whether
