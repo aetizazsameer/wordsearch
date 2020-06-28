@@ -32,7 +32,7 @@ public class WordSearch
 			System.out.print("Word "+w.toLowerCase()+" was not found in the word search. ");
 	}
 	
-	private void checkAll(String w, int r, int c)
+	public void checkAll(String w, int r, int c)
 	{
 		if(checkLeft(w, r, c))
 		{
@@ -76,7 +76,7 @@ public class WordSearch
 		}
 	}
 	
-	private boolean checkLeft(String w, int r, int c)
+	public boolean checkLeft(String w, int r, int c)
 	{
 		if(c-(w.length()-1)<0)
 			return false;
@@ -90,7 +90,7 @@ public class WordSearch
 		return false;
 	}
 	
-	private boolean checkRight(String w, int r, int c)
+	public boolean checkRight(String w, int r, int c)
 	{
 		if(c+(w.length()-1)>=x)
 			return false;
@@ -104,7 +104,7 @@ public class WordSearch
 		return false;
 	}
 
-	private boolean checkUp(String w, int r, int c)
+	public boolean checkUp(String w, int r, int c)
 	{
 		if(r-(w.length()-1)<0)
 			return false;
@@ -118,7 +118,7 @@ public class WordSearch
 		return false;
 	}
 
-	private boolean checkDown(String w, int r, int c)
+	public boolean checkDown(String w, int r, int c)
   	{
   		if(r+(w.length()-1)>=y)
   			return false;
@@ -132,7 +132,7 @@ public class WordSearch
   		return false;
 	}
 	
-	private boolean checkDiagUpLeft(String w, int r, int c)
+	public boolean checkDiagUpLeft(String w, int r, int c)
 	{
 		if(c-(w.length()-1)<0 || r-(w.length()-1)<0)
 			return false;
@@ -146,7 +146,7 @@ public class WordSearch
 		return false;
 	}
 	
-	private boolean checkDiagUpRight(String w, int r, int c)
+	public boolean checkDiagUpRight(String w, int r, int c)
 	{
 		if(c+(w.length()-1)>=x || r-(w.length()-1)<0)
 			return false;
@@ -160,7 +160,7 @@ public class WordSearch
 		return false;
 	}
 	
-	private boolean checkDiagDownLeft(String w, int r, int c)
+	public boolean checkDiagDownLeft(String w, int r, int c)
 	{
 		if(c-(w.length()-1)<0 || r+(w.length()-1)>=y)
 			return false;
@@ -174,7 +174,7 @@ public class WordSearch
 		return false;
 	}
 	
-	private boolean checkDiagDownRight(String w, int r, int c)
+	public boolean checkDiagDownRight(String w, int r, int c)
 	{
 		if(c+(w.length()-1)>=x || r+(w.length()-1)>=y)
 			return false;

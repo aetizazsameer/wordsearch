@@ -1,9 +1,17 @@
-Aetizaz Sameer
-
-Github: aetizazsameer/wordsearch/README.md
+	Aetizaz Sameer
+	Github: aetizazsameer/wordsearch/README.md
 
 # Update log
-v1.0: Initial release
+v1.0:
+	
+	- Initial release
+v1.1: 
+
+	- Updated variable names and specified response formats for clarity
+	- Credits
+	- Automatic restart on incorrectly-formatted response
+	- Restart and exit notices
+	- Fixed immediate closing of console window and error message display
 
 # wordsearch
 This program was adapted from another program I made in school. The original program could be used to determine whether
