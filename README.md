@@ -1,14 +1,12 @@
-Aetizaz Sameer
-
-Github: aetizazsameer/wordsearch/README.md
+	Aetizaz Sameer
+	Github: aetizazsameer/wordsearch/README.md
 
 # Update log
 v1.0:
 	
 	- Initial release
-
 v1.1: 
-	
+
 	- Updated variable names and specified response formats for clarity
 	- Credits
 	- Automatic restart on incorrectly-formatted response
