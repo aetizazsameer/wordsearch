@@ -1,5 +1,5 @@
 //Aetizaz Sameer
-//Github: aetizazsameer/wordsearch/src/WordSearch.java
+//Github: aetizazsameer/wordsearch/WordSearch.java
 //Converted to .exe using Launch4j 3.12
 
 public class WordSearch
@@ -30,21 +30,6 @@ public class WordSearch
 					checkAll(w, r, c);
 		if(!isFound)
 			System.out.print("Word "+w.toLowerCase()+" was not found in the word search. ");
-	}
-	
-	public void findLocation(String w) //fixed handling of 1-letter words via findLocation in v1.2
-	{
-		w=w.toUpperCase();
-		isFound=false;
-		for(int r=0; r<m.length; r++)
-			for(int c=0; c<m[0].length; c++)
-				if(m[r][c].charAt(0)==w.charAt(0))
-				{
-					isFound=true;
-					System.out.print("Character "+w.toLowerCase()+" was found at ("+(c+1)+", "+(x-r)+"). ");
-				}
-		if(!isFound)
-			System.out.print("Character "+w.toLowerCase()+" was not found in the word search. ");
 	}
 	
 	public void checkAll(String w, int r, int c)

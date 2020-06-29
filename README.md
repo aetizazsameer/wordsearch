@@ -12,15 +12,7 @@ v1.1:
 	- Automatic restart on incorrectly-formatted response
 	- Restart and exit notices
 	- Fixed immediate closing of console window and error message display
-v1.2:
 
-	- Handling of 1x1 word searches
-	- More concise results for one-letter searches
-	- Additional restart notice on incorrectly-formatted response to "another word search?"
-	- Updated source code header
-	- Additional credits in source code
-	- Improved concision in source code
-	
 # wordsearch
 This program was adapted from another program I made in school. The original program could be used to determine whether
 particular words are present in a word search puzzle. However, it was impossible to specify words and enter a custom
