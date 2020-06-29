@@ -17,6 +17,7 @@ v1.2:
 	- Handling of 1x1 word searches
 	- More concise results for one-letter searches
 	- Additional restart notice on incorrectly-formatted response to "another word search?"
+	- Updated source code header
 	- Additional credits in source code
 	- Improved concision in source code
 	
