@@ -20,6 +20,12 @@ v1.2:
 	- Updated source code header
 	- Additional credits in source code
 	- Improved concision in source code
+v1.3:
+
+	- Updated variable names for clarity in source code
+	- Generalized end method and improved concision in source code
+	- Fixed error for word searches with greater heights than widths
+	- Fixed error for one-wide or one-tall word searches
 	
 # wordsearch
 This program was adapted from another program I made in school. The original program could be used to determine whether

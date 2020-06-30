@@ -15,8 +15,8 @@ public class WordSearch
 		this.y = y;
 		int i=0;
 		
-		for(int r=0; r<y; r++)
-			for(int c=0; c<x; c++)
+		for(int r=0; r<x; r++)					//fixed error for wordsearches for which y>x in v1.3
+			for(int c=0; c<y; c++)				//fixed error for wordsearches for which x=1 or y=1 in v1.3
 				m[r][c]=str.charAt(i++)+"";
 	}
 	
@@ -47,7 +47,7 @@ public class WordSearch
 			System.out.print("Character "+w.toLowerCase()+" was not found in the word search. ");
 	}
 	
-	public void checkAll(String w, int r, int c)
+	private void checkAll(String w, int r, int c)
 	{
 		if(checkLeft(w, r, c))
 		{
@@ -91,7 +91,7 @@ public class WordSearch
 		}
 	}
 	
-	public boolean checkLeft(String w, int r, int c)
+	private boolean checkLeft(String w, int r, int c)
 	{
 		if(c-(w.length()-1)<0)
 			return false;
@@ -105,7 +105,7 @@ public class WordSearch
 		return false;
 	}
 	
-	public boolean checkRight(String w, int r, int c)
+	private boolean checkRight(String w, int r, int c)
 	{
 		if(c+(w.length()-1)>=x)
 			return false;
@@ -119,7 +119,7 @@ public class WordSearch
 		return false;
 	}
 
-	public boolean checkUp(String w, int r, int c)
+	private boolean checkUp(String w, int r, int c)
 	{
 		if(r-(w.length()-1)<0)
 			return false;
@@ -133,7 +133,7 @@ public class WordSearch
 		return false;
 	}
 
-	public boolean checkDown(String w, int r, int c)
+	private boolean checkDown(String w, int r, int c)
   	{
   		if(r+(w.length()-1)>=y)
   			return false;
@@ -147,7 +147,7 @@ public class WordSearch
   		return false;
 	}
 	
-	public boolean checkDiagUpLeft(String w, int r, int c)
+	private boolean checkDiagUpLeft(String w, int r, int c)
 	{
 		if(c-(w.length()-1)<0 || r-(w.length()-1)<0)
 			return false;
@@ -161,7 +161,7 @@ public class WordSearch
 		return false;
 	}
 	
-	public boolean checkDiagUpRight(String w, int r, int c)
+	private boolean checkDiagUpRight(String w, int r, int c)
 	{
 		if(c+(w.length()-1)>=x || r-(w.length()-1)<0)
 			return false;
@@ -175,7 +175,7 @@ public class WordSearch
 		return false;
 	}
 	
-	public boolean checkDiagDownLeft(String w, int r, int c)
+	private boolean checkDiagDownLeft(String w, int r, int c)
 	{
 		if(c-(w.length()-1)<0 || r+(w.length()-1)>=y)
 			return false;
@@ -189,7 +189,7 @@ public class WordSearch
 		return false;
 	}
 	
-	public boolean checkDiagDownRight(String w, int r, int c)
+	private boolean checkDiagDownRight(String w, int r, int c)
 	{
 		if(c+(w.length()-1)>=x || r+(w.length()-1)>=y)
 			return false;
