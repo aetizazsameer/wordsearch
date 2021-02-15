@@ -1,7 +1,7 @@
-	Aetizaz Sameer
-	Github: aetizazsameer/wordsearch/README.md
+# wordsearch
+A Java-based word search puzzle solver for any rectangular word search
 
-# Update log
+### Update log
 v1.0:
 	
 	- Initial release
